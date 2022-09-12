@@ -23,8 +23,8 @@ function changeBodyColorNum() {
   out(num)
   out(numhx)
   let hexcol = new Number(numhx).toString(16)
-  if (hexcol.length == 2) {hexcol = "0000" + hexcol}
-  if (hexcol.length == 4) {hexcol = "00" + hexcol}
+  if (hexcol.length == 2) {hexcol = "0000" + hexcol} //whatever you tyoe in it starts changing color
+  if (hexcol.length == 4) {hexcol = "00" + hexcol}//whatever you tyoe in it starts changing color
   out(hexcol)
   bdy.style.backgroundColor = "#" + hexcol
 }
@@ -37,4 +37,4 @@ function changeBodyColorKey(key) {
 pbSetColor.addEventListener('click', changeBodyColor)
 pbSetColorNum.addEventListener('click', changeBodyColorNum)
 
-inpColor.addEventListener('input', changeBodyColorKey)
+inpColor.addEventListener('input', changeBodyColorKey)//eventlistener event'input'

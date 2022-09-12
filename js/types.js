@@ -9,7 +9,7 @@ function showTypes(lst) {
 let arr = [1,2]
 out(arr)
 
-arr = [1.5, 'hellp', 5.5, 4>3, [1,2], {'firstName': 'Erik'}, null]
+arr = [1.5, 'hellp', 5.5, 4>3, [1,2], {'firstName': 'Erik'}, null, 'a']
 out(arr)
 showTypes(arr)
 out('hello')

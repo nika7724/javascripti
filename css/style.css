@@ -12,6 +12,39 @@ body {
   cursor: pointer;
 }
 
+.btn3 {
+  border: none;
+  background-color: #9da289;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: inherit;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.btn4 {
+  border: none;
+  background-color: #9da289;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: inherit;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.notshow {
+  display: none;
+}
+
+.padding {
+  background-color: #9da289;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10rem 10rem;
+  cursor: pointer;
+}
+
 .first {
   font-family: Arial;
   font-size: 12px;
