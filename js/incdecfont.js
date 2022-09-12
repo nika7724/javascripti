@@ -1,4 +1,4 @@
-out("im in increase decrease font")
+out("im in increase decrease font") // shomehow i can use 'out' function which has already been used in another file. and it must be excuted with html
 
 const pbIncrease = document.querySelector(".pbIncrease")
 const pbDecrease = document.querySelector(".pbDecrease")
