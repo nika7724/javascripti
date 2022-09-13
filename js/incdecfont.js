@@ -1,4 +1,4 @@
-/*out("im in increase decrease font") // shomehow i can use 'out' function which has already been used in another file. and it must be excuted with html
+out("im in increase decrease font") //somehow I can use 'out' function which has already been used in another file. and it must be excuted with html
 
 const pbIncrease = document.querySelector(".pbIncrease")
 const pbDecrease = document.querySelector(".pbDecrease")
@@ -7,7 +7,7 @@ const lineFirst = document.querySelector(".first")
 
 out(lineFirst)
 out("fontsize =" + lineFirst.style.fontSize)
-lineFirst.style.fontSize = '30px'
+lineFirst.style.fontSize = '30px' //set font size
 out("fontsize =" + lineFirst.style.fontSize)
 
 let fontsize = 10;
@@ -19,48 +19,25 @@ function increaseFontSize(btn) {
   lineFirst.style.fontSize = fontsize + 'px'
 }
 
-//pbIncrease.addEventListener('click'), () => increaseFontSize())
-//pbIncrease.addEventListener('click'), (btn) => increaseFontSize(btn))
+
+/*function decreaseFontSize(btnn) {
+  out(btnn)
+  fontsize--
+  out("fontsize = " + lineFirst.style.fontSize)
+  lineFirst.style.fontSize = fontsize + 'px'
+}*/
+
 
 function testKeyPressed(event) {
-  //out(event)
-  //out(event.key)
+  out(event)
+  out(event.key)
   let k = event.key
   if (k == 'd') {
     out("dummy")
   }
 }
 
-pbIncrease.addEventListener('click', increaseFontSize)
-
-document.addEventListener('keydown', e => testKeyPressed(e))*/
-
-
-out("im in increase decrease font")
-
-const pbIncrease = document.querySelector(".pbIncrease")
-const pbDecrease = document.querySelector(".pbDecrease")
-
-const lineFirst = document.querySelector(".first")
-
-out(lineFirst)
-out("fontsize =" + lineFirst.style.fontSize)
-lineFirst.style.fontSize = '30px'
-out("fontsize =" + lineFirst.style.fontSize)
-
-let fontsize = 10;
-
-function increaseFontSize(btn) {
-  out(btn)
-  fontsize++
-  out("fontsize = " + lineFirst.style.fontSize)
-  lineFirst.style.fontSize = fontsize + 'px'
-}
-
-//pbIncrease.addEventListener('click'), () => increaseFontSize())
-//pbIncrease.addEventListener('click'), (btn) => increaseFontSize(btn))
-
-function testKeyPressed(event) {
+/*function testKeyPressed(event) {
   //out(event)
   //out(event.key)
   let k = event.key
@@ -77,8 +54,17 @@ function testKeyPressed(event) {
     default:
       out("ikke noget vigtigt k=" + k.key);
   }
-}
+}*/
+
 
 pbIncrease.addEventListener('click', increaseFontSize)
+//pbIncrease.addEventListener('click'), () => increaseFontSize()) //another way to pass event, without argument
+//pbIncrease.addEventListener('click'), (btn) => increaseFontSize(btn))//another way to pass event
 
-document.addEventListener('keydown', e => testKeyPressed(e))
+//pbIncrease.addEventListener('click', decreaseFontSize)
+
+
+
+document.addEventListener('keydown', e => testKeyPressed(e)) //we don't have a button, we have keyboard
+
+
